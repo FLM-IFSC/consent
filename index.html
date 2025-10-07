@@ -45,19 +45,19 @@
         <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg border border-gray-200">
             
             <header class="text-center p-6 border-b border-gray-200">
-                <h1 class="text-2xl font-bold text-gray-900">IFSC: Gerador de Termo (LGPD e ECA)</h1>
+                <h1 class="text-2xl font-bold text-green-700">IFSC: Gerador de Termo (LGPD e ECA)</h1>
                 <p class="text-gray-600">Consentimento para Biometria e Serviços de Nuvem</p>
             </header>
             
             <div class="p-6 md:p-8">
                 <div class="no-print p-4 mb-8 bg-blue-50 border-l-4 border-blue-500 text-sm text-blue-800">
-                    <p class="font-bold mb-2">Prezados pais ou responsáveis,</p>
+                    <p class="font-bold mb-2">Prezados pais ou responsáveis de alunos menores de idade que estudam no IFSC,</p>
                     <p>O Instituto Federal de Santa Catarina (IFSC), no seu compromisso com a inovação e a segurança, utiliza tecnologias para aprimorar a experiência educacional. Em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD) e o Estatuto da Criança e do Adolescente (ECA), este documento visa obter sua autorização formal para o tratamento de dados pessoais do(a) estudante em duas frentes: (A) Plataformas Educacionais Digitais e (B) Sistemas de Segurança e Acesso Físico.</p>
                 </div>
 
                 <form id="consent-form" class="no-print space-y-8">
                     <fieldset>
-                        <legend class="text-lg font-semibold text-blue-800 mb-2">1. Dados do Responsável Legal</legend>
+                        <legend class="text-lg font-semibold text-green-700 mb-2">1. Dados do Responsável Legal</legend>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
                                 <label for="responsavel_nome" class="block text-sm font-medium text-gray-700">Nome Completo</label>
@@ -71,7 +71,7 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend class="text-lg font-semibold text-blue-800 mb-2">2. Dados do Menor de Idade</legend>
+                        <legend class="text-lg font-semibold text-green-700 mb-2">2. Dados do Menor de Idade</legend>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
                                 <label for="menor_nome" class="block text-sm font-medium text-gray-700">Nome Completo</label>
@@ -85,7 +85,7 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend class="text-lg font-semibold text-blue-800 mb-2">3. Informações do Campus</legend>
+                        <legend class="text-lg font-semibold text-green-700 mb-2">3. Informações do Campus</legend>
                          <div>
                             <label for="campus_selecionado" class="block text-sm font-medium text-gray-700">Campus (digite para buscar)</label>
                             <input list="campus-list" id="campus_selecionado" name="campus_selecionado" required class="mt-1 block w-full rounded-md border-gray-300 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
@@ -94,7 +94,7 @@
                     </fieldset>
 
                      <fieldset class="space-y-5">
-                        <legend class="text-lg font-semibold text-blue-800 mb-4">4. Declaração de Consentimento</legend>
+                        <legend class="text-lg font-semibold text-green-700 mb-4">4. Declaração de Consentimento</legend>
                         <div class="p-4 border rounded-md">
                             <p class="font-semibold text-gray-800">A. Plataformas Educacionais Digitais (Google e Microsoft)</p>
                              <div class="mt-2 space-y-2">
@@ -125,7 +125,7 @@
 
                     <div id="error-message" role="alert" aria-live="polite" class="text-red-600 text-sm font-medium pt-2 hidden"></div>
 
-                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition duration-150 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition duration-150 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
                         Gerar e Baixar PDF do Termo
                     </button>
                 </form>
@@ -166,7 +166,7 @@
         <p class="font-bold mb-1">Aviso:</p>
         <p class="mb-2">Esta ferramenta é um desenvolvimento experimental. Os artefatos gerados devem ser obrigatoriamente validados nos sistemas de assinatura por um Servidor Público Federal antes de qualquer uso oficial.</p>
         <p class="text-gray-500">Desenvolvido por FLM na Coordenadoria de Gestão de Dados (CGD) da DTIC (Diretoria de Tecnologia da Informação e Comunicação) do IFSC - Reitoria.</p>
-        <p class="text-gray-500">Dúvidas ou sugestões, entre em contato pelo e-mail: <a href="mailto:coord.gestao.dados@ifsc.edu.br" class="text-blue-600 hover:underline">coord.gestao.dados@ifsc.edu.br</a></p>
+        <p class="text-gray-500">Dúvidas ou sugestões, entre em contato pelo e-mail: <a href="mailto:coord.gestao.dados@ifsc.edu.br" class="text-green-700 hover:underline">coord.gestao.dados@ifsc.edu.br</a></p>
     </footer>
 
     <!-- Template do PDF, fica oculto na página e é usado pelo script -->
@@ -361,4 +361,5 @@
     </script>
 </body>
 </html>
+
 
