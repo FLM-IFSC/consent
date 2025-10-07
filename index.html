@@ -45,7 +45,7 @@
         <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg border border-gray-200">
             
             <header class="text-center p-6 border-b border-gray-200">
-                <h1 class="text-2xl font-bold text-gray-900">IFSC - DTIC - CGD: Gerador de Termo (LGPD e ECA)</h1>
+                <h1 class="text-2xl font-bold text-gray-900">IFSC: Gerador de Termo (LGPD e ECA)</h1>
                 <p class="text-gray-600">Consentimento para Biometria e Serviços de Nuvem</p>
             </header>
             
@@ -98,27 +98,27 @@
                         <div class="p-4 border rounded-md">
                             <p class="font-semibold text-gray-800">A. Plataformas Educacionais Digitais (Google e Microsoft)</p>
                              <div class="mt-2 space-y-2">
-                               <div class="flex items-center">
-                                   <input id="nuvem_sim" name="auth_nuvem" type="radio" required value="autorizo" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
-                                   <label for="nuvem_sim" class="ml-3 block text-sm text-gray-700"><b>AUTORIZO</b> a criação de contas educacionais para o(a) estudante.</label>
-                               </div>
-                               <div class="flex items-center">
-                                   <input id="nuvem_nao" name="auth_nuvem" type="radio" value="nao_autorizo" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
-                                   <label for="nuvem_nao" class="ml-3 block text-sm text-gray-700"><b>NÃO AUTORIZO</b> o uso das plataformas. (Ciente de que deverei procurar a coordenação de TI para desativar todas as plataformas e não terei acesso a e-mail ou outras ferramentas educacionais desses provedores).</label>
-                               </div>
+                                <div class="flex items-center">
+                                    <input id="nuvem_sim" name="auth_nuvem" type="radio" required value="autorizo" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" checked>
+                                    <label for="nuvem_sim" class="ml-3 block text-sm text-gray-700"><b>AUTORIZO</b> a criação de contas educacionais para o(a) estudante.</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input id="nuvem_nao" name="auth_nuvem" type="radio" value="nao_autorizo" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                    <label for="nuvem_nao" class="ml-3 block text-sm text-gray-700"><b>NÃO AUTORIZO</b> o uso das plataformas. (Ciente de que deverei procurar a coordenação de TI para desativar todas as plataformas e não terei acesso a e-mail ou outras ferramentas educacionais desses provedores).</label>
+                                </div>
                             </div>
                        </div>
                         <div class="p-4 border rounded-md">
                              <p class="font-semibold text-gray-800">B. Sistemas de Biometria (Acesso Físico)</p>
                              <div class="mt-2 space-y-2">
-                                <div class="flex items-center">
-                                    <input id="biometria_sim" name="auth_biometria" type="radio" required value="autorizo" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
-                                    <label for="biometria_sim" class="ml-3 block text-sm text-gray-700"><b>AUTORIZO</b> a coleta dos dados biométricos para controle de acesso e segurança.</label>
-                                </div>
-                                <div class="flex items-center">
-                                    <input id="biometria_nao" name="auth_biometria" type="radio" value="nao_autorizo" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
-                                    <label for="biometria_nao" class="ml-3 block text-sm text-gray-700"><b>NÃO AUTORIZO</b> a coleta. (Ciente de que o IFSC fornecerá um método alternativo, como crachá).</label>
-                                </div>
+                                 <div class="flex items-center">
+                                     <input id="biometria_sim" name="auth_biometria" type="radio" required value="autorizo" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" checked>
+                                     <label for="biometria_sim" class="ml-3 block text-sm text-gray-700"><b>AUTORIZO</b> a coleta dos dados biométricos para controle de acesso e segurança.</label>
+                                 </div>
+                                 <div class="flex items-center">
+                                     <input id="biometria_nao" name="auth_biometria" type="radio" value="nao_autorizo" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                     <label for="biometria_nao" class="ml-3 block text-sm text-gray-700"><b>NÃO AUTORIZO</b> a coleta. (Ciente de que o IFSC fornecerá um método alternativo, como crachá).</label>
+                                 </div>
                              </div>
                         </div>
                     </fieldset>
@@ -161,6 +161,13 @@
 
         </div>
     </main>
+
+    <footer class="text-center p-4 mt-4 text-xs text-gray-600 border-t border-gray-200 max-w-3xl mx-auto">
+        <p class="font-bold mb-1">Aviso:</p>
+        <p class="mb-2">Esta ferramenta é um desenvolvimento experimental. Os artefatos gerados devem ser obrigatoriamente validados nos sistemas de assinatura por um Servidor Público Federal antes de qualquer uso oficial.</p>
+        <p class="text-gray-500">Desenvolvido por FLM na Coordenadoria de Gestão de Dados (CGD) da DTIC (Diretoria de Tecnologia da Informação e Comunicação) do IFSC - Reitoria.</p>
+        <p class="text-gray-500">Dúvidas ou sugestões, entre em contato pelo e-mail: <a href="mailto:coord.gestao.dados@ifsc.edu.br" class="text-blue-600 hover:underline">coord.gestao.dados@ifsc.edu.br</a></p>
+    </footer>
 
     <!-- Template do PDF, fica oculto na página e é usado pelo script -->
     <div id="pdf-template-container" class="hidden">
@@ -223,6 +230,7 @@
                 <p style="border-top: 1px solid #000; display: inline-block; padding: 0 40px;">Assinatura do Responsável Legal</p>
                 <p style="font-size: 8pt;">(__RESPONSAVEL_NOME__)</p>
             </div>
+
         </div>
     </div>
 
@@ -353,5 +361,4 @@
     </script>
 </body>
 </html>
-
 
